@@ -1,0 +1,248 @@
+﻿/* adjust to check positioning */
+.datepicker_instance_1
+{
+    position: relative;
+    top: 140px;
+    left: 100px;
+}
+
+
+/* input styling */
+
+.datepicker
+{
+    width: 150px;
+    border: 1px solid #ccc;
+
+    font-family: sans-serif;
+}
+
+.datepicker__input
+{
+    width: 75%;
+    height: 20px;
+    padding: 0 20% 0 5%;
+    margin: 0;
+    border: 0;
+
+    background: none;
+}
+
+.datepicker__trigger
+{
+    width: 13px;
+    height: 10px;
+    
+    position: absolute;
+    right: 8px;
+    bottom: 5px;
+
+    cursor: pointer;
+
+    text-indent: -9999px;
+    background: transparent url('../img/datepicker.png') no-repeat 0 0;
+}
+
+
+/* calendar popup styling */
+
+.calendar
+{
+    width: 185px;
+    padding: 0 3px;
+    border: 1px solid #b4b4b4;
+
+    border-radius: 4px;
+
+    font-family: sans-serif;
+    font-size: 11px;
+    text-align: center;
+
+    background: #fff;
+}
+
+.datepicker__calendar
+{
+    display: none;
+
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+.datepicker__calendar_visible_yes
+{
+    display: block;
+}
+
+
+/* calendar header */
+
+.calendar__header
+{
+    margin: 3px 0 0;
+    padding: 5px;
+    border: 1px solid #f0dbc1;
+
+    background: linear-gradient(to bottom, #f3e9d1 0%,#f2e4c7 100%);
+
+    border-radius: 2px;
+}
+
+.calendar__button
+{
+    cursor: pointer;
+    line-height: 14px;
+}
+
+.calendar__button_type_prev
+{
+    float: left;
+}
+
+.calendar__button_type_next
+{
+    float: right;
+}
+
+.calendar__button_type_current
+{
+    display: inline-block;
+}
+
+.calendar__button_type_current:hover
+{
+    color: #d96a00;
+}
+
+
+/* calendar view (date, month, year) */
+
+.calendar__days,
+.calendar__months,
+.calendar__years
+{
+    display: none;
+}
+
+.calendar__content_view_days .calendar__days,
+.calendar__content_view_months .calendar__months,
+.calendar__content_view_years .calendar__years
+{
+    display: block;
+}
+
+
+/* calendar item (including date, month & year ) */
+
+.calendar__content
+{
+    margin: 5px 0;
+
+    font-size: 0; /* getting rid of the space between inline-blocks */
+}
+
+.calendar__content ul
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.calendar__item,
+.calendar__weekday
+{
+    display: inline-block;
+
+    padding: 5px 0;
+    margin: 2px;
+    border: 1px solid #aaa;
+
+    cursor: pointer;
+}
+
+.calendar__weekday
+{
+    margin: 0 2px;
+}
+
+.calendar__item:hover
+{
+    color: #d96a00;
+}
+
+.calendar__item_prev_yes,
+.calendar__item_next_yes
+{
+    color: #d2d2d2;
+}
+
+.calendar__weekday
+{
+    width: 22px;
+    padding: 3px 0;
+    border: 0;
+
+    font-size: 11px;
+    cursor: default;
+}
+
+.calendar__days .calendar__item
+{
+    width: 20px;
+    height: 14px;
+    padding: 0;
+    border: 1px solid #fcfcfc;
+
+    font-size: 11px;
+    line-height: 14px;
+    vertical-align: middle;
+}
+
+.calendar__months .calendar__item
+{
+    width: 55px;
+
+    font-size: 15px;
+}
+
+.calendar__years .calendar__item
+{
+    width: 40px;
+    padding: 4px 0 2px;
+
+    font-size: 13px;
+}
+
+.calendar__days .calendar__item_selected_yes,
+.calendar__item_selected_yes
+{
+    border: 1px solid #d96a00;
+    color: #d96a00;
+}
+
+.calendar__days .calendar__item_focused_yes,
+.calendar__item_focused_yes
+{
+    border: 1px solid #f3e9d1;
+    background: #f3e9d1;
+}
+
+
+/* today link */
+
+.calendar__today
+{
+    display: inline-block;
+    padding: 3px 10px;
+    border: 1px solid #aaa;
+
+    color: #09c;
+
+    cursor: pointer;
+}
+
+.calendar__today:hover
+{
+    color: #d96a00;
+}
